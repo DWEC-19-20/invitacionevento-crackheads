@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Invitaciones Boda</title>
   <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
@@ -10,32 +11,34 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1>Invitación Boda</h1>
-      <p>Práctica de DOM de DWEC</p>
-      <form id="registrar">
-        <input type="text" name="name" placeholder="Invitar a alguien">
-        <button type="submit" name="submit" value="submit">Enviar</button>
+      <h1>SpeedFest</h1>
+      <p>Born2Burn</p>
+      <form id="register">
+        <input type="text" id="name" name="name" placeholder="Send invitation">
+        <button type="submit" id="submit" name="submit" value="submit">Submit</button>
       </form>
     </header>
 		
     <div class="main">	
-      <h2>Invitados</h2>
+      <h2>Guests</h2>
+      <div class="confirmed">Hide Confirmed <input type="checkbox" name="filter" id="filter"></div>
       <ul id="invitedList" class="">
-	      <li>
-		      <span>María</span>
-		      <label> Confirmed<input type="checkbox"> </label>
-		      <button>edit</button>
-		      <button>remove</button>
-	      </li>
-	      <li class="responded">
-		      <span>Pepe</span>
-		      <label>Confirmed<input type="checkbox"></label>
-		      <button>edit</button>
-		      <button>remove</button>
-	      </li>
+        <li>
+            <span>María</span>
+            <label>Confirmed<input type="checkbox"></label>
+            <button>edit</button>
+            <button>remove</button>
+          </li>
+          <li class="responded">
+            <span>Pepe</span>
+            <label>Confirmed<input type="checkbox"></label>
+            <button>edit</button>
+            <button>remove</button>
+          </li>
+        
 	    </ul>
-	    
     </div>
   </div>
+  <script src="js/background.js"></script>
 </body>
 </html>
