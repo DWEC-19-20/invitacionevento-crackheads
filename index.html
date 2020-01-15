@@ -3,13 +3,13 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Invitaciones Boda</title>
+  <title>SpeedFest</title>
   <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper" id="wrapper">
     <header>
       <h1>SpeedFest</h1>
       <p>Born2Burn</p>
@@ -22,23 +22,48 @@
     <div class="main">	
       <h2>Guests</h2>
       <div class="confirmed">Hide Confirmed <input type="checkbox" name="filter" id="filter"></div>
-      <ul id="invitedList" class="">
-        <!--<li id="guest0">
-            <span>María</span>
-            <label>Confirmed<input type="checkbox"></label>
-            <button>edit</button>
-            <button>remove</button>
-          </li>
-          <li class="responded">
-            <span>Pepe</span>
-            <label>Confirmed<input type="checkbox"></label>
-            <button>edit</button>
-            <button>remove</button>
-          </li>
-        -->
+      <ul id="invitedList">
+        <!-- Here goes the code-->
 	    </ul>
     </div>
   </div>
-  <script src="js/background.js"></script>
+
+    <div id="editModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Enter new name:</p>
+        <input type="text" name="newName" id="newName">
+        <button id="newNameButton">Change name</button>
+      </div>
+    </div>
+
+    <div id="removeModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" id="delClose">&times;</span>
+        <p>Remove User. <br> This Action is irreversible, you can not change this.</p>
+        <button id="delButton">Delete User</button>
+      </div>
+    </div>
+
+    <div id="nameModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" id="nameClose">&times;</span>
+        <p>Empty invitation or already exists this name.</p>
+      </div>
+    </div>
+  <!--<script src="js/background.js"></script>-->
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+
+<script src="js/app.js"></script>
 </body>
 </html>
