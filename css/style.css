@@ -149,6 +149,10 @@ div > label {
   float: right;
 }
 
+#filter {
+  float: right;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
