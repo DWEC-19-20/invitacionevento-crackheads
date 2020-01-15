@@ -21,13 +21,15 @@ document.getElementById("register").addEventListener("submit", function () {
     let name = document.getElementById("name").value
 /* cant be created if there's another with the same name
     cant be blank names either */
-    if (document.getElementById("name").value != "" && names())
+    if (document.getElementById("name").value != "" && names()) {
         create(name)
+    }
     else {
         document.getElementById("nameModal").style.display = "block"
         document.getElementById("wrapper").style.opacity = "0.4"
         event.preventDefault()
     }
+
     db.collection("users").doc(name).set({
         username: name,
         confirmed: "no"
@@ -47,6 +49,8 @@ document.getElementById("register").addEventListener("submit", function () {
     }
 })
 
+
+// Starts the program
 function create(name) {
     console.log("name on create: " + name)
     //event.preventDefault()
@@ -85,6 +89,8 @@ function create(name) {
             db.collection("users").doc(name).update({
                 confirmed: "yes"
             });
+            if (document.getElementById("filter").checked)
+                newLi.setAttribute("style", "display: none;")
         } else {
             newLabel.parentElement.className = "not-responded"
             db.collection("users").doc(name).update({
@@ -158,21 +164,18 @@ function create(name) {
 }
 
 // Catch Filter button
-    document.getElementById("filter").addEventListener('change', function() {
-        let list = document.getElementById("invitedList")
-        let confirmed = list.getElementsByClassName("responded")
-        if(this.checked) {
-            for (let i = 0 ; confirmed; i++)
-                confirmed.item(i).setAttribute("style", "display: none;")
-        } else {
-            for (let i = 0 ; confirmed; i++)
-                confirmed.item(i).setAttribute("style", "display: block;")
-        }
-    })
-
-function filter () {
-
-}
+document.getElementById("filter").addEventListener('change', function() {
+    let list = document.getElementById("invitedList")
+    let confirmed = list.getElementsByClassName("responded")
+    if(this.checked) {
+        for (let i = 0 ; confirmed; i++)
+            confirmed.item(i).setAttribute("style", "display: none;")
+    } 
+    else {
+        for (let i = 0 ; confirmed; i++)
+            confirmed.item(i).setAttribute("style", "display: block;")
+    }
+})
 
 // ################## MODAL BOX #######################
 // Get the modal
