@@ -5,7 +5,7 @@ Lo más interesante que hemos conseguido en este proyecto es la sincronización 
 
 ![AppBoda](images/capture.png)
 
-### Características 🔧
+### Tareas y Caracterisitcas 🔧
 
 _Las tareas realizadas por cada uno de los miembros:_
 
