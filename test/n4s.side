@@ -1,0 +1,343 @@
+{
+  "id": "39dc99fe-fcc7-4926-b4b1-4fe06b30ad5f",
+  "version": "2.0",
+  "name": "n4s",
+  "url": "http://localhost/root/2%20Ev/Cliente/invitacionevento/?name=&submit=submit",
+  "tests": [{
+    "id": "ec713962-e883-41b7-a106-7df4a9bde8a3",
+    "name": "crear usuario con enter",
+    "commands": [{
+      "id": "d2123741-2ec6-4ba7-a0e4-7d3d6ecc06e0",
+      "comment": "Creará un usuario usando enter.",
+      "command": "open",
+      "target": "/root/2%20Ev/Cliente/invitacionevento/?name=&submit=submit",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "984594cb-6cc7-4b56-b5fb-2e8484cccf46",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bcb0ac3-386e-46f6-9310-23dd90e9f9fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user1"
+    }, {
+      "id": "68805931-f0cd-499f-a089-bfef89736dc0",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "387336ad-6d72-48e2-bf06-0cf091c9ae4f",
+    "name": "crear usuario click submit",
+    "commands": [{
+      "id": "b1fa5ec2-11a7-433b-968d-cdc415549c27",
+      "comment": "Creará un usuario usando submit click",
+      "command": "open",
+      "target": "http://localhost/root/2%20Ev/Cliente/invitacionevento/?name=&submit=submit",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edb589e4-46fe-44b7-9a4e-a31d41fd2c3e",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f8e7d40-acec-48ef-8763-6f59af33b399",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user2"
+    }, {
+      "id": "7316c72d-5d39-43ed-9e7f-1839b2d1f333",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bc7e5b9f-2b3a-4691-843a-d21a2d026cc3",
+    "name": "eliminar usuario",
+    "commands": [{
+      "id": "6e533e63-e4cb-43b8-99ba-b3196933be04",
+      "comment": "Eliminará el primer usuario de la lista.",
+      "command": "open",
+      "target": "http://localhost/root/2%20Ev/Cliente/invitacionevento/?name=&submit=submit",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4a1e101-3869-40d2-8293-7936d0b4e063",
+      "comment": "",
+      "command": "click",
+      "target": "css=#guest0 > button:nth-child(4)",
+      "targets": [
+        ["css=#guest0 > button:nth-child(4)", "css:finder"],
+        ["xpath=//li[@id='guest0']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'remove')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6195b188-019c-43b2-b42e-f32f8806a788",
+      "comment": "",
+      "command": "click",
+      "target": "id=delButton",
+      "targets": [
+        ["id=delButton", "id"],
+        ["css=#delButton", "css:finder"],
+        ["xpath=//button[@id='delButton']", "xpath:attributes"],
+        ["xpath=//div[@id='removeModal']/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete User')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "32cd2c26-1f98-4dae-a3e0-596bc7d8da73",
+    "name": "editar nombre usuario",
+    "commands": [{
+      "id": "3f1bd881-7be7-4968-9007-0eabb69b4185",
+      "comment": "Editará el nombre del primer usuario de la lista.",
+      "command": "open",
+      "target": "http://localhost/root/2%20Ev/Cliente/invitacionevento/?name=&submit=submit",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e46869b-7206-4d97-b58d-5813ac0ec151",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6002f7e3-7bed-49f8-b5d6-e186c1eb8b36",
+      "comment": "",
+      "command": "click",
+      "target": "css=#guest0 > .edit",
+      "targets": [
+        ["css=#guest0 > .edit", "css:finder"],
+        ["xpath=//li[@id='guest0']/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7755bb71-5052-463d-8bb0-57421bfb9be0",
+      "comment": "",
+      "command": "type",
+      "target": "id=newName",
+      "targets": [
+        ["id=newName", "id"],
+        ["name=newName", "name"],
+        ["css=#newName", "css:finder"],
+        ["xpath=//input[@id='newName']", "xpath:attributes"],
+        ["xpath=//div[@id='editModal']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user99"
+    }, {
+      "id": "6d6c8432-06bb-47a0-9ed5-a7f993494007",
+      "comment": "",
+      "command": "click",
+      "target": "id=newNameButton",
+      "targets": [
+        ["id=newNameButton", "id"],
+        ["css=#newNameButton", "css:finder"],
+        ["xpath=//button[@id='newNameButton']", "xpath:attributes"],
+        ["xpath=//div[@id='editModal']/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Change name')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "867098a0-93c7-49ee-979b-27d4d7aea6c8",
+    "name": "ocultar confirmados",
+    "commands": [{
+      "id": "f6af391e-0365-4342-a31b-8d357524d11d",
+      "comment": "Debe activarse el checkbox de 'Hide Confirmed' y deben desaparecer los usuarios que esten confirmados",
+      "command": "open",
+      "target": "http://localhost/root/2%20Ev/Cliente/invitacionevento/?name=&submit=submit",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "238197c8-2736-4e76-a8c9-4a66c1b6cf9f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bc73d1a-d796-46ff-8991-fc2cebb3799e",
+      "comment": "",
+      "command": "click",
+      "target": "id=filter",
+      "targets": [
+        ["id=filter", "id"],
+        ["name=filter", "name"],
+        ["css=#filter", "css:finder"],
+        ["xpath=//input[@id='filter']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "97549dfd-cf43-47d6-ba48-8c5459770108",
+    "name": "permanencia de usuarios creados",
+    "commands": [{
+      "id": "100408c5-3e34-474f-9f31-ffe97e5c0372",
+      "comment": "Debe aparecer un mensaje de que el usuario ya existe despues de haber recargado la página",
+      "command": "open",
+      "target": "http://localhost/root/2%20Ev/Cliente/invitacionevento/?name=&submit=submit",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f91579f-b2fa-42c2-9d01-356e42ba34cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61ad0969-454a-40ef-957d-2266d33eb94b",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user99"
+    }, {
+      "id": "322b8285-630b-47db-9181-805111a28b53",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf3237d2-2a7a-4493-81d5-b8c160d70546",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main",
+      "targets": [
+        ["css=.main", "css:finder"],
+        ["xpath=//div[@id='wrapper']/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37d76879-2866-4f80-adc7-a8c7ee413182",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#guest0 > span",
+      "targets": [
+        ["css=#guest0 > span", "css:finder"],
+        ["xpath=//li[@id='guest0']/span", "xpath:idRelative"],
+        ["xpath=//li/span", "xpath:position"],
+        ["xpath=//span[contains(.,'user99')]", "xpath:innerText"]
+      ],
+      "value": "user99"
+    }, {
+      "id": "15f1fd08-a667-4c53-862d-8c881de51ede",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "eeaee851-e998-4fd2-9dbe-e4d7743fae59",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ec713962-e883-41b7-a106-7df4a9bde8a3"]
+  }],
+  "urls": ["http://localhost/", "http://localhost/root/2%20Ev/Cliente/invitacionevento/?name=&submit=submit"],
+  "plugins": []
+}

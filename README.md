@@ -7,7 +7,7 @@ Lo más interesante que hemos conseguido en este proyecto es la sincronización 
  <img src="/images/capture.PNG" alt="capture"  height="400"/> 
 </p>
 
-### Tareas y Características 🔧
+## Tareas y Características 🔧
 
 _**Las tareas realizadas por cada uno de los miembros:**_
 
@@ -34,7 +34,7 @@ _**Las tareas realizadas por cada uno de los miembros:**_
 
 ## Ejecutando las pruebas ⚙️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+_Explicado en /test/README.md_
 
 ## Firebase 🔥
 

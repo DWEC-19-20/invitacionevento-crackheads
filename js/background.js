@@ -37,7 +37,6 @@ document.getElementById("register").addEventListener("submit", function () {
         console.log("Got an error: ", error)
       })
 
-
     function names() {
         for (let i = 0; i < _names.length; i++) {
             if (document.getElementById("name").value == _names[i])
