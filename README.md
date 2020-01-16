@@ -3,7 +3,7 @@
 _El objetivo es desarrollar una aplicación para controlar las invitaciones de un evento de coches, tiene un aspecto como el siguiente.
 Lo más interesante que hemos conseguido en este proyecto es la sincronización con la BDD de Firebase._
 
-![AppBoda](images/capture.png)
+![Need4Speed](images/capture.png)
 
 ### Tareas y Caracterisitcas 🔧
 
