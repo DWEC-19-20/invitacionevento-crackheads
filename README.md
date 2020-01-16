@@ -9,7 +9,7 @@ Lo más interesante que hemos conseguido en este proyecto es la sincronización 
 
 ### Tareas y Características 🔧
 
-_Las tareas realizadas por cada uno de los miembros:_
+_**Las tareas realizadas por cada uno de los miembros:**_
 
  1. Como Administrador del evento, querría añadir invitados al evento. [**Carlos Asenjo**]
  2. Como Administrador del evento, querría poder confirmar invitados al evento. [**David Balboa**] && [**Carlos Asenjo**]
@@ -19,7 +19,7 @@ _Las tareas realizadas por cada uno de los miembros:_
  6. Como Administrador del evento me confirme antes de borrar un invitado al evento. [**David Balboa**]
  7. Como Administrador del evento querría que no se pudiera repetir el nombre de un invitado al evento (ni añadir uno vacio) [**David Balboa**]
  
- _Además se han realizado tareas adicionales:_
+ _**Además se han realizado tareas adicionales:**_
  
  1. Los nuevos invitados prevalecen en una base de datos.
  2. Se guardará la siguiente información de los invitados: Nombre, Confirmación. La cual se usará para saber si han confirmado cada uno de ellos.
