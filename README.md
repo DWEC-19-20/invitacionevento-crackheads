@@ -1,21 +1,21 @@
-# Lista Invitación Need4Speed
+# Lista Invitación Need4Speed ![N4S](images/icon.ico)
 
 _El objetivo es desarrollar una aplicación para controlar las invitaciones de un evento de coches, tiene un aspecto como el siguiente.
 Lo más interesante que hemos conseguido en este proyecto es la sincronización con la BDD de Firebase._
 
 ![Need4Speed](images/capture.PNG)
 
-### Tareas y Caracterisitcas 🔧
+### Tareas y Características 🔧
 
 _Las tareas realizadas por cada uno de los miembros:_
 
- 1. Cómo Administrador del evento, querría añadir invitados al evento. [**Carlos Asenjo**]
- 2. Cómo Administrador del evento, querría poder confirmar invitados al evento. [**David Balboa**] && [**Carlos Asenjo**]
- 3. Cómo Administrador del evento poder editar el nombre de cada asistente al evento. [**David Balboa**] && [**Carlos Asenjo**]
- 4. Cómo Administrador del evento querría poder filtrar los invitados para mostrar solo los que tienen confirmada la asistencia. [**Carlos Asenjo**]
- 5. Cómo Administrador del evento, querría poder eliminar invitados al evento [**David Balboa**]
- 6. Cómo Administrador del evento me confirme antes de borrar un invitado al evento. [**David Balboa**]
- 7. Cómo Administrador del evento querría que no se pudiera repetir el nombre de un invitado al evento (ni añadir uno vacio) [**David Balboa**]
+ 1. Como Administrador del evento, querría añadir invitados al evento. [**Carlos Asenjo**]
+ 2. Como Administrador del evento, querría poder confirmar invitados al evento. [**David Balboa**] && [**Carlos Asenjo**]
+ 3. Como Administrador del evento poder editar el nombre de cada asistente al evento. [**David Balboa**] && [**Carlos Asenjo**]
+ 4. Como Administrador del evento querría poder filtrar los invitados para mostrar solo los que tienen confirmada la asistencia. [**Carlos Asenjo**]
+ 5. Como Administrador del evento, querría poder eliminar invitados al evento [**David Balboa**]
+ 6. Como Administrador del evento me confirme antes de borrar un invitado al evento. [**David Balboa**]
+ 7. Como Administrador del evento querría que no se pudiera repetir el nombre de un invitado al evento (ni añadir uno vacio) [**David Balboa**]
  
  _Además se han realizado tareas adicionales:_
  
@@ -52,5 +52,5 @@ https://dwec-19-20.github.io/invitacionevento-crackheads/
 
 _Aquellos que ayudaron a levantar el proyecto desde sus inicios:_
 
-* **Carlos Asenjo** - [itsnotlonee](https://github.com/itsnotLonee)
-* **David Balboa** - [charlie](https://github.com/CarlosAsenjo)
+* **David Balboa** - [itsnotlonee](https://github.com/itsnotLonee)
+* **Carlos Asenjo** - [charlie](https://github.com/CarlosAsenjo)
