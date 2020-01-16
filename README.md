@@ -1,23 +1,56 @@
-# Invitación Boda
+# Lista Invitación Need4Speed
 
-Aplicación de invitación boda.
+_El objetivo es desarrollar una aplicación para controlar las invitaciones de un evento de coches, tiene un aspecto como el siguiente.
+Lo más interesante que hemos conseguido en este proyecto es la sincronización con la BDD de Firebase._
 
-El objetivo es desarrollar una aplicación para controlar las invitaciones a una boda, que tendrá un aspecto final como el de la imagen
+![AppBoda](images/capture.png)
 
-![AppBoda](images/appBoda.png)
+### Características 🔧
 
-Puedes moficiar el contexto a otro que quieras, un partido de futbol, una lan party para jugar partidas en red con amigos, etc. 
-pero la funcionad pedida será la misma y debes respetar los nombres de las clases css
+_Las tareas realizadas por cada uno de los miembros:_
 
-La estructura básica html y css ya está creada, pero eres libre para modificarla si así lo deseas.
+ 1. Cómo Administrador del evento, querría añadir invitados al evento. [**Carlos Asenjo**]
+ 2. Cómo Administrador del evento, querría poder confirmar invitados al evento. [**David Balboa**] && [**Carlos Asenjo**]
+ 3. Cómo Administrador del evento poder editar el nombre de cada asistente al evento. [**David Balboa**] && [**Carlos Asenjo**]
+ 4. Cómo Administrador del evento querría poder filtrar los invitados para mostrar solo los que tienen confirmada la asistencia. [**Carlos Asenjo**]
+ 5. Cómo Administrador del evento, querría poder eliminar invitados al evento [**David Balboa**]
+ 6. Cómo Administrador del evento me confirme antes de borrar un invitado al evento. [**David Balboa**]
+ 7. Cómo Administrador del evento querría que no se pudiera repetir el nombre de un invitado al evento (ni añadir uno vacio) [**David Balboa**]
+ 
+ _Además se han realizado tareas adicionales:_
+ 
+ 1. Los nuevos invitados prevalecen en una base de datos.
+ 2. Se guardará la siguiente información de los invitados: Nombre, Confirmación. La cual se usará para saber si han confirmado cada uno de ellos.
+ 3. Al borrar un invitado se borra de la BDD también.
+ 4. Al modificar el nombre de un invitado se borra de la BDD.
+ 5. Al pulsar la tecla enter se agrega un nuevo invitado al evento.
+ 6. Si pulsamos la tecla enter en la ventana emergente de editar, también se actualiza el campo y la BDD.
+ 7. Se ha ajustado la vista responsive para que las tarjetas de los invitados se vean bien ordenadas en vista para dispositivos móviles.
+ 8. Se han creado Modal Box para editar los datos del invitado, confirmar si quieres borrar y para informar sobre un error a la hora de introducir el nombre.
+ 
+ Se ha creado una base de datos en Firebase (https://firebase.google.com/). **Ver apartado Firebase para mas información de como se ha hecho esto**.
 
-Completa todas las historias utilizando DOM
+## Ejecutando las pruebas ⚙️
 
-1) Cómo Administrador del evento, querría añadir nombres a la lista de invitados para saber quien asistirá.
-1) Cómo Administrador del evento, querría poder confirmar invitados al evento para saber quien finalmente irá
-1) Cómo Administrador del evento poder editar el nombre de cada asistente al evento para corregir errores
-1) Cómo Administrador del evento querría poder filtrar los invitados para mostrar solo los que tienen confirmada la asistencia para visualizarlo mejor
-1) Cómo Administrador del evento, querría poder eliminar invitados al evento que se hayan dado de baja
-1) Cómo Administrador del evento me confirme antes de borrar un invitado al evento para evitar cometer un error
-1) Cómo Administrador del evento querría que no se pudiera repetir el nombre de un invitado al evento ni añadir nombres vacios para evitar errores
+_Explica como ejecutar las pruebas automatizadas para este sistema_
 
+## Firebase
+
+_Hemos utilizado Firebase para la creación de la base de datos, y funciona de la siguiente manera:_
+
+  - Firebase tiene un apartado el cual te permite crear un proyecto y añadirle una base de datos al mismo.
+  - Permite la creación de una base de datos sin necesidad de PHP.
+  - Esta BDD va vinculada a tu cuenta de Google.
+  - Se sincroniza mediante consultas a la BDD.
+  - La base de datos es actualizada instantaneamente cada vez que se agrega un nuevo invitado, se borra o se actualiza su nombre.
+
+## Despliegue 📦
+
+https://dwec-19-20.github.io/invitacionevento-crackheads/
+
+## Autores ✒️
+
+_Aquellos que ayudaron a levantar el proyecto desde sus inicios:_
+
+* **Carlos Asenjo** - [itsnotlonee](https://github.com/itsnotLonee)
+* **David Balboa** - [charlie](https://github.com/CarlosAsenjo)
