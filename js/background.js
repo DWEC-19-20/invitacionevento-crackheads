@@ -1,14 +1,12 @@
 var _guest = 0
-var _edit = 0
 var _names = [""]
-var _delete = ""
 
+// Catch default behavior of the submit
 function processForm(e) {
     if (e.preventDefault) e.preventDefault();
-    // You must return false to prevent the default form behavior
+    // You must return false to prevent the default
     return false;
 }
-
 var form = document.getElementById('register');
 if (form.attachEvent) {
     form.attachEvent("submit", processForm);
@@ -122,6 +120,9 @@ function create(name) {
                 newButton.parentElement.firstElementChild.textContent = document.getElementById("newName").value
                 modal.style.display = "none";
                 document.getElementById("wrapper").style.opacity = "1"
+                db.collection("users").doc(name).update({
+                    username: document.getElementById("newName").value
+                })
             }
         })
     })

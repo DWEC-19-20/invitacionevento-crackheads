@@ -21,18 +21,18 @@
   const usersRef = db.collection("first")
 
 // Show current users on DB
-db.collection("users").get().then(function(querySnapshot) {
-  querySnapshot.forEach(function(doc) {
-      // doc.data() is never undefined for query doc snapshots
-      console.log(doc.id, " => ", doc.data())
-      let obj = Object.values(doc.data())
-      let myJSON = JSON.stringify(obj)
-      var mySubString = myJSON.substring(
-        myJSON.lastIndexOf(',') + 2, 
-        myJSON.lastIndexOf('') -2
-      )
-      mySubString2 = myJSON.substring(2, myJSON.lastIndexOf(',') - 1)
-      create(mySubString)
+db.collection("users").get().then(function (querySnapshot) {
+  querySnapshot.forEach(function (doc) {
+    // doc.data() is never undefined for query doc snapshots
+    console.log(doc.id, " => ", doc.data())
+    let obj = Object.values(doc.data())
+    let myJSON = JSON.stringify(obj)
+    var mySubString = myJSON.substring(
+      myJSON.lastIndexOf(',') + 2,
+      myJSON.lastIndexOf('') - 2
+    )
+    mySubString2 = myJSON.substring(2, myJSON.lastIndexOf(',') - 1)
+    create(mySubString)
   })
 })
 
