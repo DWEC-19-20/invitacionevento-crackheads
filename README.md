@@ -1,9 +1,11 @@
-# Lista Invitación Need4Speed ![N4S](images/icon.ico)
+# Lista Invitación Need4Speed <img src="/images/icon.ico" alt="N4S" width="64" height="64"/> 
 
 _El objetivo es desarrollar una aplicación para controlar las invitaciones de un evento de coches, tiene un aspecto como el siguiente.
 Lo más interesante que hemos conseguido en este proyecto es la sincronización con la BDD de Firebase._
 
-![Need4Speed](images/capture.PNG)
+<p align="center">
+ <img src="/images/capture.PNG" alt="capture"  height="400"/> 
+</p>
 
 ### Tareas y Características 🔧
 
