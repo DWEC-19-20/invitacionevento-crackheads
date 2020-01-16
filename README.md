@@ -36,7 +36,7 @@ _**Las tareas realizadas por cada uno de los miembros:**_
 
 _Explica como ejecutar las pruebas automatizadas para este sistema_
 
-## Firebase
+## Firebase 🔥
 
 _Hemos utilizado Firebase para la creación de la base de datos, y funciona de la siguiente manera:_
 
