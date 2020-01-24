@@ -74,6 +74,7 @@ function create(name) {
     newContent = document.createElement("input")
     newLabel.appendChild(newContent)
     newContent.type = 'checkbox'
+    newLabel.parentElement.className = "not-responded"
     newLabel.appendChild(newContent)
     if (mySubString2 == "yes"){
         newContent.setAttribute("checked", "true")
@@ -166,7 +167,7 @@ function create(name) {
 // Catch Filter button
 document.getElementById("filter").addEventListener('change', function() {
     let list = document.getElementById("invitedList")
-    let confirmed = list.getElementsByClassName("responded")
+    let confirmed = list.getElementsByClassName("not-responded")
     if(this.checked) {
         for (let i = 0 ; confirmed; i++)
             confirmed.item(i).setAttribute("style", "display: none;")
